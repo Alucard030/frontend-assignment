@@ -1,0 +1,22 @@
+.error-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #f8d7da;
+    color: #721c24;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .error-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .error-message {
+    font-weight: bold;
+  }
+  
