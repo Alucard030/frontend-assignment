@@ -15,7 +15,6 @@ const Pagination = ({ totalItems, itemsPerPage, onPageChange }) => {
   const getPageRange = () => {
     const pages = [];
     const pageLimit = 5;
-
     let start = Math.max(1, currentPage - 2);
     let end = Math.min(totalPages, currentPage + 2);
 
@@ -26,7 +25,6 @@ const Pagination = ({ totalItems, itemsPerPage, onPageChange }) => {
     } else {
       if (start > 1) {
         pages.push(1);
-        console.log(start, pages);
         if (start > 2) pages.push("...");
       }
 
@@ -36,7 +34,6 @@ const Pagination = ({ totalItems, itemsPerPage, onPageChange }) => {
 
       if (end < totalPages) {
         if (end < totalPages - 1) pages.push("...");
-        pages.push(totalPages);
       }
     }
 
@@ -55,14 +52,14 @@ const Pagination = ({ totalItems, itemsPerPage, onPageChange }) => {
         &lt; Prev
       </button>
 
-      {pages.map((page) =>
+      {pages.map((page, i) =>
         page === "..." ? (
-          <span key={page} className="ellipsis">
+          <span key={i} className="ellipsis">
             ...
           </span>
         ) : (
           <button
-            key={page}
+            key={i}
             onClick={() => handlePageChange(page)}
             className={currentPage === page ? "active" : ""}
             aria-label={`Go to page ${page}`}

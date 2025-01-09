@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const TableRow = ({ row, columns, renderCell: TableCell }) => {
   return (
-    <tr role="row">
+    <tr role="row" className={row.isFiller == true ? "display-none" : null}>
       {columns.map((col) => (
         <TableCell key={col.key} value={row[col.key]} header={col.header} />
       ))}

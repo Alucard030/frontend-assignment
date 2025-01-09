@@ -1,6 +1,5 @@
 import React from "react";
 import TableRow from "./TableRow";
-import PropTypes from "prop-types";
 
 const TableBody = ({ columns, data }) => {
   return (
@@ -22,7 +21,7 @@ const TableBody = ({ columns, data }) => {
       ) : (
         <tr role="row" aria-live="polite">
           <td colSpan={columns.length} role="cell" aria-describedby="no-data">
-            <span id="no-data">No data available</span>
+            <div class="no-data">No data available</div>
           </td>
         </tr>
       )}
