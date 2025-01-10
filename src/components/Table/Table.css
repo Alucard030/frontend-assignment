@@ -48,7 +48,7 @@ td[data-label]::before {
   border: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   table {
     display: block;
     width: 100%;

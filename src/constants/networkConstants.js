@@ -7,3 +7,9 @@ export const httpMethods ={
     PATCH:"patch",
     DELETE:"delete"
 }
+
+export const tableConfig = [
+    { key: "s.no", header: "S. No." },
+    { key: "percentage.funded", header: "Percentage Funded" },
+    { key: "amt.pledged", header: "Amount Pledged" },
+  ]
