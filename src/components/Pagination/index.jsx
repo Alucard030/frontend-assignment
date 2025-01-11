@@ -66,7 +66,9 @@ const Pagination = ({ totalItems, itemsPerPage, onPageChange }) => {
             <button
               key={i}
               onClick={() => handlePageChange(page)}
-              className={`button ${currentPage === page ? "active" : ""}`}
+              className={`button page-button ${
+                currentPage === page ? "active" : ""
+              }`}
               aria-label={`Go to page ${page}`}
             >
               {page}

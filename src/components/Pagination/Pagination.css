@@ -30,7 +30,7 @@
 }
 
 .button {
-  background-color: #0077b6;
+  background-color: #333333;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -58,9 +58,21 @@
 }
 
 .button:hover {
-  background-color: #0077b6b3;
+  background-color: #333333b3;
 }
 
 .button:disabled {
-  background-color: #90e0ef;
+  background-color: #999999;
+}
+
+.page-button {
+  background-color: #333333;
+}
+
+.page-button:hover {
+  background-color: #333333b3;
+}
+
+.active {
+  background-color: #666666;
 }
