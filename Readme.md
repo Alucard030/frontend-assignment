@@ -48,7 +48,7 @@ All files                  |   97.62 |    93.02 |   94.73 |   97.62 |
  src/utils.js              |     100 |    83.33 |     100 |     100 | 
   tableUtils.js            |     100 |    83.33 |     100 |     100 | 7
 ---------------------------|---------|----------|---------|---------|-------------------
-
+```
 # Deployed application
 The application is live and accessible at:  
 https://starlit-dusk-b07ce9.netlify.app
